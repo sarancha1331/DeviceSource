@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "wdDRnKoD2L6j4v40UmAwIx/UUX9KvWSs/vIE/3sIqwWAhzgRMMddlctuYAsKug0ovfrVZ5eH3N7IRg/2gxvhbA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\saran\\Desktop\\MyDevice\\DeviceSource\\Project.DataAccess\\Project.DataAccess.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\saran\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

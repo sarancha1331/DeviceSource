@@ -1,0 +1,107 @@
+﻿<h1>Список оборудования</h1>
+
+<hr />
+
+<form method="GET" asp-action="SortByProperty">
+
+<b>Тип устройства</b>
+<input name="SelectedType" type="text"/>
+
+<br />
+
+<b>Тип статус</b>
+<input name="SelectedStatus" type="text"/>
+
+<br />
+
+<b>Сортировка по колонке</b><br />
+<select name="SortableColumn">
+    <option value="" selected>Не выбрано</option>
+    <option value="SerialNumber">Серийный номер</option>
+    <option value="Status">Статус работоспособности</option>
+    <option value="Address">Место установки</option>
+    <option value="LastActivity">Время последней активности</option>
+    <option value="BufferSize">Объем буфера</option>
+    <option value="Temperature">Температура</option>
+</select>
+
+<br />
+
+<b>Возр/Убыв</b><br />
+<select name="AscendingProperty">
+    <option value="Возрастанию" selected>Возрастанию</option>
+    <option value="Убыванию">Убыванию</option>
+</select><br />
+
+<input type="submit" value="Применить" />
+
+</form>
+
+<hr />
+
+<table style="width:100%">
+  <tr>
+    <th>Тип устройства</th>
+    <th>Серийный номер</th>
+    <th>Статус</th>
+    <th>Адресс</th>
+    <th>Последняя активность</th>
+    <th>Обьём буфера</th>
+    <th>Температура</th>
+    <th>Управление</th>
+  </tr>
+
+  @foreach (var item in ViewBag.DeviceData)
+{
+    <tr>
+    <td>@item.DeviceType</td>
+    <td>@item.SerialNumber</td>
+    <td>@item.Status</td>
+    <td>@item.Address</td>
+    <td>@item.LastActivity</td>
+    <td>@item.BufferSize</td>
+    <td>@item.Temperature</td>
+    <td><a style="color: #00cfff;" href="/Home/GetById/@item.Id">Инфо</a></td>
+  </tr>
+
+}
+
+</table>
+
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.ml-2{
+    margin-left: 5px;
+}
+
+.ml-4{
+    margin-left: 10px;
+}
+
+input[type=text], select {
+  padding: 3px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  padding: 3px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+</style>

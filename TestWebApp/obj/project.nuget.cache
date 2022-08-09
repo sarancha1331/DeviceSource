@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "hUdYrvd3PpATs70h52BopRgAyIV+ym7PVPhvQPTmo3bAV0D9BW9wLmjMXcA1gV7UdNQ15RIRvyDWNhd5jZESVw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\saran\\Desktop\\MyDevice\\DeviceSource\\TestWebApp\\Project.Web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\saran\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
